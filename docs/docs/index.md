@@ -40,30 +40,24 @@ The liquidation ratio can vary depending on the collateral asset type and borrow
 
 The creation of assets through CDPs can be achieved by one of two ways:
 
-	Single collateral CDP: A borrower locks up one type of asset in order to borrow stable assets or cAssets. For example-
+1. Single collateral CDP: A borrower locks up one type of asset in order to borrow stable assets or cAssets. For example-
+User locks $200 worth of ATOM to borrow $100 worth of USD stable assets. 
 
-	User locks $200 worth of ATOM to borrow $100 worth of USD stable assets. 
 
-
-	Multi collateral CDP: A borrower may lock up multiple types of collaterals assets that can be used to mint or borrow stable assets or cAssets. For example-
-
-	User locks $100 worth ATOM and $400 worth of CMDX to borrow $100 worth of USD stable assets.
-
-	The platform will, over time, enhance its abilities to accept a mix of other stable and volatile assets that users could collateralise to mint cAssets. 
+2. Multi collateral CDP: A borrower may lock up multiple types of collaterals assets that can be used to mint or borrow stable assets or cAssets. For example-
+User locks $100 worth ATOM and $400 worth of CMDX to borrow $100 worth of USD stable assets.
+The platform will, over time, enhance its abilities to accept a mix of other stable and volatile assets that users could collateralise to mint cAssets. 
 
 
 #Oracle
 	
-An oracle is an account which is whitelisted to provide prices for the assets on the chain.
-It receives prices from external sources like Band protocol.
-It may also receive prices from the cSwap or other AMM based pools.
+An oracle is an account which is whitelisted to provide prices for the assets on the chain. The data feed for the price oracles will be sourced from reputable external platforms sources like Band protocol. It may also receive prices from the cSwap or other AMM based pools.
 
-	Band - For XAU
-	AMM- For CMDX
+
 
 #Liquidations
 	
-At any point in time, the total value of collaterals locked in a CDP must be greater than the value of the debt of the position. This mechanism exists to ensure solvency and to ensure that open debt positions can be sufficiently collateralized to withstand volatility in prices of the collaterals. In the event the prices of the locked-up collateral 	  falls, driving the collateralization ratio down below a minimum collateral ratio, the assets locked up as collateral are auctioned off to recover the amount of the outstanding debt of  the position along with the fees charged for the liquidation itself. Any surplus portion of the collateral remaining after covering the debt and the fees is returned to the owner of the CDP.
+At any point in time, the total value of collaterals locked in a CDP must be greater than the value of the debt of the position. This mechanism exists to ensure solvency and to ensure that open debt positions can be sufficiently collateralized to withstand volatility in prices of the collaterals. In the event the prices of the locked-up collateral falls, driving the collateralization ratio down below a minimum collateral ratio, the assets locked up as collateral are auctioned off to recover the amount of the outstanding debt of  the position along with the fees charged for the liquidation itself. Any surplus portion of the collateral remaining after covering the debt and the fees is returned to the owner of the CDP.
 
 During times of extreme price fluctuations and market volatility, there may occur an instance when the cumulative value of the locked-up assets doesn’t sufficiently cover the value of the debt and liquidation fees. This leads to the creation of system debt that can be absorbed by the CMDX token via a debt auction.
 	
@@ -131,6 +125,10 @@ cSwap enables users on Comdex to swap their cAssets through an AMM (automated ma
 
 
 #Perpetual Options rewards
+
+Comdex will provide incentives to liquidity farmers in the form of Perpetual Call options on CMDX. These options, when exercised, allow their holders to purchase CMDX at a pre-determined discount from the market price. 
+
+By doing so, we reduce the selling pressure on the CMDX token and establish a natural price floor. It also helps earn additional fee revenue.
 
 #Real-world asset collateralisation
 
