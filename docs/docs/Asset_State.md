@@ -1,5 +1,6 @@
 #State
 
+
 #Asset
 
 	type Asset struct {
