@@ -1,1 +1,30 @@
-site_name: Comdex - An ecosystem of solutions built with an aim of bridging DeFi & CeFi
+site_name: Comdex
+site_description : An ecosystem of solutions built with an aim of bridging DeFi & CeFi
+
+# Documentation and theme
+theme:
+  name: readthedocs
+  
+# Page tree
+nav:
+  - Comdex Overview: index.md
+  - CDP:
+     - Overview : cdp.md
+     - Concepts: cdp_Concepts.md
+     - State: cdp_State.md
+     - Messages: cdp_Messages.md
+     - Events: cdp_Events.md
+  - Asset:
+     - Overview: Asset_Overview.md
+     - State: Asset_State.md
+     - Messages: Asset_Messages.md
+  - Oracle:
+     - Overview: Oracle_Overview.md
+     - State: Oracle_State.md
+     - Messages: Oracle_Messages.md
+  - Liquidity:
+     - Overview: Liquidity_Overview.md   
+  - Incentives:
+     - Overview: Incentive_Overview.md
+     - State: Incentive_State.md
+     - Messages: Incentive_Messages.md
