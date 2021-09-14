@@ -8,23 +8,24 @@ theme:
 
   features:
     - tabs
+    - navigation.top
     #- instant
   palette:
     - scheme: default
       primary: white
       accent: red
       toggle:
-        icon: material/weather-sunny
+        icon: material/lightbulb-outline
         name: Switch to dark mode
     - scheme: slate
       primary: grey
       accent: red
       toggle:
-        icon: material/weather-night
+        icon: material/lightbulb
         name: Switch to light mode
   font:
-    text: Poppins
-    code: Poppins
+    text: Roboto
+    code: Roboto Mono
 
   icon:
   logo: assets/images/logo.svg
@@ -64,6 +65,7 @@ extra:
       icon: ../assets/images/overview.svg
     - name: Incentives
       icon: ../assets/images/overview.svg
+
 # Page tree
 nav:
   - Comdex Overview: index.md
