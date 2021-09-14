@@ -8,7 +8,7 @@ Investors holding a range of crypto assets can, on Comdex, collateralize and lev
 
 This mechanism essentially enables holders of crypto assets to take simultaneous “long” positions on their holdings and other cAssets.
 
-#Challenges addressed by Comdex? 
+#Challenges addressed by Comdex
 
 Ordinary investors today are easily able to access equity & forex investments due to rapid advancements in the fields of technology and finance. These same asset classes were previously more restricted and more complicated for the ordinary investor to access. Similarly, advances in DeFi are enabling users today to access a wide range of financial services that were previously restricted to qualified investors only. 
 
@@ -66,31 +66,8 @@ During times of extreme price fluctuations and market volatility, there may occu
 	
 #cSwap
 
-cSwap enables users on Comdex to swap their cAssets through an AMM (automated market maker). Swapping enables investors to take profit from the movement in relative prices of cAssets. An AMM is a decentralized finance protocol that facilitates the swapping of two assets without the need for a centralized intermediary. As is the case with trading firms, who make traditional markets, AMMs help establish prices and facilitate trades through permissionless liquidity pools. Assets are swapped through the AMM, and a trading fee is charged for each executed order. In addition, users of the platform can deposit their assets into liquidity pools that facilitate trading on cSwap, to earn CMDX token rewards and a portion of the trading fees earned by the pool. 
+cSwap enables users on Comdex to swap their cAssets through an AMM (automated market maker). Swapping enables investors to take profit from the movement in relative prices of cAssets. An AMM is a decentralized finance protocol that facilitates the swapping of two assets without the need for a centralized intermediary. As is the case with trading firms, who make traditional markets, AMMs help establish prices and facilitate trades through permissionless liquidity pools. Assets are swapped through the AMM, and a trading fee is charged for each executed order. In addition, users of the platform can deposit their assets into liquidity pools that facilitate trading on cSwap, to earn CMDX token rewards and a portion of the trading fees earned by the pool.
 
-#AMM
-	
-An AMM is a decentralized finance protocol that facilitates the swapping of two assets without the need for a centralized intermediary. As is the case with trading firms, who make traditional markets, AMMs help establish prices and facilitate trades through permissionless liquidity pools. 
-
-Assets are swapped through the AMM, and a trading fee is charged for each executed order. Users of the platform can deposit their assets into liquidity pools that facilitate trading on cSwap, to earn CMDX token rewards and a portion of the trading fees earned by the pool. cSwap then enables users on the platform to swap between cAssets based on the available liquidity pools
-
-
-#Liquidity Pools
-	
-Liquidity providers are users of the platform who deposit their assets into an AMM pool to earn CMDX token rewards and a portion of the trading fees collected on the pool. Upon providing the liquidity, liquidity providers are issued LP shares (liquidity provider shares), representing their share of the total liquidity in the pool. 
-
-Users pay a fee for each trade on the cSwap to buy from or sell to the liquidity pools. These transaction fees are added to the pool assets, which in essence, results in a pro-rata distribution of the proceeds to the LP shareholders.
-
-To enable trading of a cAsset, a liquidity pool must be created containing the cAsset and a stable asset. For instance, users buying the cAsset can do so by swapping their stable assets against cAssets from the liquidity pool, causing the share of stable assets in the pool to increase and the share of cAssets to decrease. 
-
-At this point, the liquidity pool must rebalance itself to ensure that it can continue to facilitate trades on the cSwap. This is done by changing the relative prices of the cAsset and stable asset to incentivize liquidity providers to increase the share of the asset in deficit. This dynamic rebalancing of the assets in the pools is achieved through the constant product formula.
-
-(Balance of cAsset token Balance of stable asset token = k)
-
-The constant product formula, “k”, represents a constant value that must be obtained through the product of the balance of the two tokens in the pool. For example, in a pool containing cAsset and stable asset, every time a cAsset is bought, the price of the cAsset goes up, incentivizing holders of the cAsset to sell to cSwap, leading to an increase in the share of the cAsset in the pool. 
-
-#cSwap
-	
 cSwap adjusts the relative prices of cAssets to rebalance the pools to as close to “k” as possible. 
 
 To preserve the constant product invariant (mentioned in the section above), the cSwap will change the relative prices of cAssets to ensure that the product of the resultant balances of the pool is as close to “k” as possible. 
@@ -113,6 +90,26 @@ spread=max(​YAin/(X+Ain)​​−YAin/X​​,0)
 
 When a pool has large balances of tokens on both sides from liquidity providers, the spread becomes smaller and helps the pool execute closer to its reported price of Y/X.
 
+#AMM
+	
+An AMM is a decentralized finance protocol that facilitates the swapping of two assets without the need for a centralized intermediary. As is the case with trading firms, who make traditional markets, AMMs help establish prices and facilitate trades through permissionless liquidity pools. 
+
+Assets are swapped through the AMM, and a trading fee is charged for each executed order. Users of the platform can deposit their assets into liquidity pools that facilitate trading on cSwap, to earn CMDX token rewards and a portion of the trading fees earned by the pool. cSwap then enables users on the platform to swap between cAssets based on the available liquidity pools
+
+
+#Liquidity Pools
+	
+Liquidity providers are users of the platform who deposit their assets into an AMM pool to earn CMDX token rewards and a portion of the trading fees collected on the pool. Upon providing the liquidity, liquidity providers are issued LP shares (liquidity provider shares), representing their share of the total liquidity in the pool. 
+
+Users pay a fee for each trade on the cSwap to buy from or sell to the liquidity pools. These transaction fees are added to the pool assets, which in essence, results in a pro-rata distribution of the proceeds to the LP shareholders.
+
+To enable trading of a cAsset, a liquidity pool must be created containing the cAsset and a stable asset. For instance, users buying the cAsset can do so by swapping their stable assets against cAssets from the liquidity pool, causing the share of stable assets in the pool to increase and the share of cAssets to decrease. 
+
+At this point, the liquidity pool must rebalance itself to ensure that it can continue to facilitate trades on the cSwap. This is done by changing the relative prices of the cAsset and stable asset to incentivize liquidity providers to increase the share of the asset in deficit. This dynamic rebalancing of the assets in the pools is achieved through the constant product formula.
+
+(Balance of cAsset token Balance of stable asset token = k)
+
+The constant product formula, “k”, represents a constant value that must be obtained through the product of the balance of the two tokens in the pool. For example, in a pool containing cAsset and stable asset, every time a cAsset is bought, the price of the cAsset goes up, incentivizing holders of the cAsset to sell to cSwap, leading to an increase in the share of the cAsset in the pool. 
 
 #Features
 
