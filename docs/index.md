@@ -76,19 +76,24 @@ To preserve the constant product invariant (mentioned in the section above), the
 
 With k being the current balance of the pool’s source assets and X & Y is that of the target asset
 
-
+---
 XY = k = (X + Ain) (Y - Bout)
 
-With  being the current balance of the pool’s source asset and being that of the target asset:
-XY=k=(X+Ain​)(Y−Bout​)
+---
 
-To determine the true value of  given the trader’s offered asset :
-Bout​=XAin/(Y+Ain​)
-​​
+To determine the true value of  given the trader’s offered asset
 
-cSwap can execute trades with only the current balances of the pool and the number of incoming tokens. The market price is encoded as the pool’s target tokens divided by the source asset (also called the pool ratio). The spread between the executed and the expected trade is:
+---
+Bout​ = XAin/(Y+Ain​)
 
-spread=max(​YAin/(X+Ain)​​−YAin/X​​,0)
+----
+
+cSwap can execute trades with only the current balances of the pool and the number of incoming tokens. The market price is encoded as the pool’s target tokens divided by the source asset (also called the pool ratio). The spread between the executed and the expected trade is
+
+---
+spread = max(​YAin/(X+Ain)​​−YAin/X​​,0)
+
+---
 
 When a pool has large balances of tokens on both sides from liquidity providers, the spread becomes smaller and helps the pool execute closer to its reported price of Y/X.
 
