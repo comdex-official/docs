@@ -2,7 +2,7 @@
 
 Below various messages are sent to the oracle module which trigger state changes detailed below.
 
-#AddMarket:
+##AddMarket:
 
 	type MsgAddMarketRequest struct {
 		From     string
@@ -11,7 +11,7 @@ Below various messages are sent to the oracle module which trigger state changes
 	}
 
 
-#UpdateMarket:
+##UpdateMarket:
 	
 	type MsgupdateMarketRequest struct {
 		From     string
@@ -20,7 +20,7 @@ Below various messages are sent to the oracle module which trigger state changes
 	}
 
 	
-#FetchPrice:
+##FetchPrice:
 
 	type MsgFetchPriceRequest struct {
 		From             string

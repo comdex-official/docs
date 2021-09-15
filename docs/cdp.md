@@ -1,7 +1,6 @@
-#CDP
+#Overview
 
-Overview
-The x/cdp module stores and manages Collateralized Debt Positions (or CDPs).
+CDP module manages and stores the creation of vaults/CDP's. 
 
 A CDP enables the creation of an asset pegged to an external price (US Dollar) by collateralization with another asset. Collateral is locked in a vault, and a new stable asset can be minted up to a fraction of the collateral value. To unlock the collateral, the debt must be repaid by returning the minted asset to the vault at which point it will be burned, and the provided collateral is unlocked.
 

@@ -2,21 +2,21 @@
 
 Below various messages are sent to the asset module which trigger state changes detailed below.
 
-#Market
+##Market
 	
 	type Market struct {
 		Symbol   string
 		ScriptID uint64
 	}
 
-#Calldata
+##Calldata
 	
 	type Calldata struct {
 		Symbols    []string
 		Multiplier uint64
 	}
 	
-#Result
+##Result
 
 	type Result struct {
 		Rates []uint64

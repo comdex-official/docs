@@ -2,7 +2,7 @@
 
 Below various messages are sent to the asset module which trigger state changes detailed below.
 
-#AddAsset:
+##AddAsset:
 
 	type MsgAddAssetRequest struct {
 		From     string
@@ -11,7 +11,7 @@ Below various messages are sent to the asset module which trigger state changes 
 		Decimals int64
 	}
 	
-#UpdateAsset:	
+##UpdateAsset:	
 
 	type MsgUpdateAssetRequest struct {
 		From     string
@@ -21,7 +21,7 @@ Below various messages are sent to the asset module which trigger state changes 
 		Decimals int64
 	}
 	
-#AddMarketForAsset:
+##AddMarketForAsset:
 	
 	type MsgAddMarketForAssetRequest struct {
 		From   string
@@ -29,7 +29,7 @@ Below various messages are sent to the asset module which trigger state changes 
 		Symbol string
 	}
 	
-#RemoveMarketForAsset:
+##RemoveMarketForAsset:
 
 	type MsgRemoveMarketForAssetRequest struct {
 		From   string
@@ -38,7 +38,7 @@ Below various messages are sent to the asset module which trigger state changes 
 	
 	}
 
-#AddPair:
+##AddPair:
 
 	type MsgAddPairRequest struct {
 		From             string
@@ -47,7 +47,7 @@ Below various messages are sent to the asset module which trigger state changes 
 		LiquidationRatio types.Dec
 	}
 
-#UpdatePair:
+##UpdatePair:
 
 	type MsgUpdatePairRequest struct {
 		From             string
