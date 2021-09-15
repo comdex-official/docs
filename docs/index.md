@@ -4,19 +4,20 @@
 
 Comdex is an ecosystem of solutions built to bridge the gap between DeFi & CeFi by creating synthetic representations of real-world assets.
 
-Investors holding a range of crypto assets can, on Comdex, collateralize and leverage their holdings to take exposure to synthetic assets. In addition, users can lock-up their crypto holding in vaults and mint cAssets (synthetic assets on Comdex) which can be traded on a native exchange with other holders of cAssets.
+Investors holding a range of crypto assets can, on Comdex, collateralize and leverage their holdings to take exposure to synthetic assets. Users can lock-up their crypto holding in vaults and mint cAssets (synthetic assets on Comdex) which can be traded on a native exchange with other holders of cAssets.
 
-This mechanism essentially enables holders of crypto assets to take simultaneous “long” positions on their holdings and other cAssets.
+This mechanism essentially enables holders of crypto assets to take simultaneous “long” positions on their holdings and other Assets.
 
 #Challenges addressed by Comdex
 
 Ordinary investors today are easily able to access equity & forex investments due to rapid advancements in the fields of technology and finance. These same asset classes were previously more restricted and more complicated for the ordinary investor to access. Similarly, advances in DeFi are enabling users today to access a wide range of financial services that were previously restricted to qualified investors only. 
 
 Much to the tune of the innovations brought about by DeFi, Comdex aims to lead the movement towards enhancing the access of ordinary investors to a wide range of financial assets. Investors today are faced with the following challenges-
-Lack of global accessibility
-Lack of 24/7 markets
-Jurisdictional hurdles for cross-border capital movement
-Lengthy KYC AML processes.
+
+1. Lack of global accessibility
+2. Lack of 24/7 markets
+3. Jurisdictional hurdles for cross-border capital movement
+4. Lengthy KYC AML processes.
 
 A permissionless system where users can democratically create, hold, trade, and transact in synthetic assets helps users genuinely overcome the challenges and circumvent any hurdles they face in traditional financial markets.
 
@@ -33,7 +34,7 @@ All cAssets are essentially debt, valued as a fraction of the total value of col
 
 The prices of assets are tracked from decentralized pools on other platforms (such as Osmosis). A liquidation event is triggered when the collateralization ratio of the position falls below the minimum threshold value for a cAsset. 
 
-Collateralization ratio= value of collaterals locked upValue of borrowed assets.
+Collateralization ratio = (Value of collaterals locked up)/(Value of borrowed assets)
 
 The liquidation ratio can vary depending on the collateral asset type and borrowed asset type. Additionally, the liquidation ratios can be modified and changed through governance proposals for each asset. A debt position can be closed when the borrowed cAsset is returned, and the borrower pays a fee (to close the position). Upon closing a position, the cAsset is burned, and the collaterals that were locked up are returned to the borrower. 
 
