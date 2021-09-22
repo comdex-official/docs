@@ -94,9 +94,9 @@ nav:
      - State: Incentive_State.md
      - Messages: Incentive_Messages.md
   - Node Setup:
-     - TestNet: Node_testnet.md
-     - Config: Node_config.md
      - Installation: Node_installation.md
+     - Config: Node_config.md
+     - TestNet: Node_testnet.md
      - Join Network: Node_join-network.md
   - Validators:
     - Validator Guide: Validator_Guide.md
