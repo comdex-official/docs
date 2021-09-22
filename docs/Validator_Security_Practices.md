@@ -1,18 +1,14 @@
-#Validator Security
+# Validator Security
 
 Each validator candidate is encouraged to run its operations independently, as diverse setups increase the resilience of the network. Validator candidates should commence their setup phase now in order to be on time for launch.
 
-&nbsp;
-
-##HSM Key Management
+### HSM Key Management
 
 It is mission critical that an attacker cannot steal a validator's key. If this is possible, it puts the entire stake delegated to the compromised validator at risk. Hardware security modules are an important strategy for mitigating this risk.
 
 The suggested method of key management is described by Iqulusion here: https://github.com/iqlusioninc/tmkms
 
-&nbsp;
-
-##Sentry Nodes for Anti-DDoS
+### Sentry Nodes for Anti-DDoS
 
 Validators are responsible for ensuring that the network can sustain denial of service attacks.
 
@@ -42,9 +38,7 @@ Sentry Nodes should edit their <span style="color:blue">*config.toml*</span>:
 private_peer_ids = "ipaddress of validator nodes"
 ```
 
-&nbsp;
-
-##Environment Variables
+### Environment Variables
 
 By default, uppercase environment variables with the following prefixes will replace lowercase command-line flags:
 
