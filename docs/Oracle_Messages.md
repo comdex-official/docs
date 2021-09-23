@@ -8,6 +8,7 @@ Below various messages are sent to the oracle module which trigger state changes
 		From     string
 		Symbol   string
 		ScriptID uint64
+		Id       uint64
 	}
 
 
