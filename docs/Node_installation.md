@@ -107,7 +107,7 @@ After=network.target
 [Service]
 Type=simple
 User=ubuntu
-ExecStart=/data/comdex/go/bin/comdex start
+ExecStart=/home/ubuntu/go/bin/comdex start
 Restart=on-abort
 
 [Install]
