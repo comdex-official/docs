@@ -1,4 +1,4 @@
-# Comdex Official documentaion
+# Comdex Official Documentaion
 
 To run mkdocs server locally:
 1. Install the requirements

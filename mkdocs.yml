@@ -63,7 +63,7 @@ extra:
       icon: ../assets/images/overview.svg
     - name: Liquidity
       icon: ../assets/images/overview.svg
-    - name: Incentives
+    - name: Rewards
       icon: ../assets/images/overview.svg
     - name: Node Setup
       icon: ../assets/images/overview.svg
@@ -89,10 +89,10 @@ nav:
      - Messages: Oracle_Messages.md
   - Liquidity:
      - Overview: Liquidity_Overview.md   
-  - Incentives:
-     - Overview: Incentive_Overview.md
-     - State: Incentive_State.md
-     - Messages: Incentive_Messages.md
+  - Rewards:
+     - Overview: Rewards_Overview.md
+     - State: Rewards_State.md
+     - Messages: Rewards_Messages.md
   - Node Setup:
      - Installation: Node_installation.md
      - Config: Node_config.md

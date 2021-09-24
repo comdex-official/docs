@@ -112,15 +112,15 @@ Users pay a fee for each trade on the cSwap to buy from or sell to the liquidity
 
 To enable trading of a cAsset, a liquidity pool must be created containing the cAsset and a stable asset. For instance, users buying the cAsset can do so by swapping their stable assets against cAssets from the liquidity pool, causing the share of stable assets in the pool to increase and the share of cAssets to decrease. 
 
-At this point, the liquidity pool must rebalance itself to ensure that it can continue to facilitate trades on the cSwap. This is done by changing the relative prices of the cAsset and stable asset to incentivize liquidity providers to increase the share of the asset in deficit. This dynamic rebalancing of the assets in the pools is achieved through the constant product formula.
+At this point, the liquidity pool must rebalance itself to ensure that it can continue to facilitate trades on the cSwap. This is done by changing the relative prices of the cAsset and stable asset to reward liquidity providers to increase the share of the asset in deficit. This dynamic rebalancing of the assets in the pools is achieved through the constant product formula.
 
 (Balance of cAsset token Balance of stable asset token = k)
 
-The constant product formula, “k”, represents a constant value that must be obtained through the product of the balance of the two tokens in the pool. For example, in a pool containing cAsset and stable asset, every time a cAsset is bought, the price of the cAsset goes up, incentivizing holders of the cAsset to sell to cSwap, leading to an increase in the share of the cAsset in the pool. 
+The constant product formula, “k”, represents a constant value that must be obtained through the product of the balance of the two tokens in the pool. For example, in a pool containing cAsset and stable asset, every time a cAsset is bought, the price of the cAsset goes up, rewarding holders of the cAsset to sell to cSwap, leading to an increase in the share of the cAsset in the pool. 
 
 ##Features
 
-The use of Vaults in minting synthetic assets and trading synthetic assets on AMM are key innovations in DeFi. They have empowered investors to diversify and hedge their exposures truly. Comdex aims to leverage these technologies and enhance them with some innovative features to help better integrate with the ecosystem and create more rewarding and sustainable incentive structures.
+The use of Vaults in minting synthetic assets and trading synthetic assets on AMM are key innovations in DeFi. They have empowered investors to diversify and hedge their exposures truly. Comdex aims to leverage these technologies and enhance them with some innovative features to help better integrate with the ecosystem and create more rewarding and sustainable rewards structures.
 
 
 ##Liquid- Staking assets as Collateral
@@ -130,7 +130,7 @@ cSwap enables users on Comdex to swap their cAssets through an AMM (automated ma
 
 ##Perpetual Options rewards
 
-Comdex will provide incentives to liquidity farmers in the form of Perpetual Call options on CMDX. These options, when exercised, allow their holders to purchase CMDX at a pre-determined discount from the market price. 
+Comdex will provide rewards to liquidity farmers in the form of Perpetual Call options on CMDX. These options, when exercised, allow their holders to purchase CMDX at a pre-determined discount from the market price. 
 
 By doing so, we reduce the selling pressure on the CMDX token and establish a natural price floor. It also helps earn additional fee revenue.
 
