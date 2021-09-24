@@ -21,12 +21,13 @@ Below various messages are sent to the asset module which trigger state changes 
 		Decimals int64
 	}
 	
-##AddMarketForAsset:
+##AddMarket:
 	
-	type MsgAddMarketForAssetRequest struct {
-		From   string
-		Id     uint64
-		Symbol string
+	type MsgAddMarketRequest struct {
+		From     string
+		Symbol   string
+		ScriptID uint64
+		Id       uint64
 	}
 	
 ##RemoveMarketForAsset:
