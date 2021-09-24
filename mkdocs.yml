@@ -55,7 +55,7 @@ extra:
   nav_links:
     - name: Comdex Overview
       icon: ../assets/images/overview.svg
-    - name: CDP
+    - name: Vault
       icon: ../assets/images/overview.svg
     - name: Asset
       icon: ../assets/images/overview.svg
@@ -73,12 +73,12 @@ extra:
 # Page tree
 nav:
   - Comdex Overview: index.md
-  - CDP:
-     - Overview : cdp.md
-     - Concepts: cdp_Concepts.md
-     - State: cdp_State.md
-     - Messages: cdp_Messages.md
-     - Events: cdp_Events.md
+  - Vault:
+     - Overview : vault.md
+     - Concepts: vault_Concepts.md
+     - State: vault_State.md
+     - Messages: vault_Messages.md
+     - Events: vault_Events.md
   - Asset:
      - Overview: Asset_Overview.md
      - State: Asset_State.md
