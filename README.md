@@ -17,13 +17,20 @@ To run mkdocs server locally:
 
 Documentation for Comdex at: [comdex-official.github.io](https://comdex-official.github.io/docs/)
 
-*[OVERVIEW](https://comdex-official.github.io/docs/)
-*[VAULT](https://comdex-official.github.io/docs/vault/)
-*[ASSET](https://comdex-official.github.io/docs/Asset_Overview/)
-*[ORACLE](https://comdex-official.github.io/docs/Oracle_Overview/)
-*[LIQUIDITY](https://comdex-official.github.io/docs/Liquidity_Overview/)
-*[REWARDS](https://comdex-official.github.io/docs/Rewards_Overview/)
-*[NODE SETUP](https://comdex-official.github.io/docs/Node_installation/)
-*[VALIDATORS](https://comdex-official.github.io/docs/Validator_Guide/)
+[1. OVERVIEW](https://comdex-official.github.io/docs/)
+
+[2. VAULT](https://comdex-official.github.io/docs/vault/)
+
+[3. ASSET](https://comdex-official.github.io/docs/Asset_Overview/)
+
+[4. ORACLE](https://comdex-official.github.io/docs/Oracle_Overview/)
+
+[5. LIQUIDITY](https://comdex-official.github.io/docs/Liquidity_Overview/)
+
+[6. REWARDS](https://comdex-official.github.io/docs/Rewards_Overview/)
+
+[7. NODE SETUP](https://comdex-official.github.io/docs/Node_installation/)
+
+[8. VALIDATORS](https://comdex-official.github.io/docs/Validator_Guide/)
 
 
