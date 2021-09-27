@@ -9,8 +9,8 @@ CreateRequest creates and stores a new Vault, adding collateral from the sender.
 	type MsgCreateRequest struct {
 		From      string
 		PairID    uint64
-		AmountIn  github_com_cosmos_cosmos_sdk_types.Int
-		AmountOut github_com_cosmos_cosmos_sdk_types.Int
+		AmountIn  types.Int
+		AmountOut types.Int
 	}
 	
 Resulting changes:
@@ -28,7 +28,7 @@ Deposit adds collateral to a Vault in the form of a deposit. Collateral is taken
 	type MsgDepositRequest struct {
 		From   string
 		ID     uint64
-		Amount github_com_cosmos_cosmos_sdk_types.Int
+		Amount types.Int
 	}
 
 Resulting Changes:
@@ -44,7 +44,7 @@ Withdraw removes collateral from a vault, provided it does not put the Vault und
 	type MsgWithdrawRequest struct {
 		From   string
 		ID     uint64
-		Amount github_com_cosmos_cosmos_sdk_types.Int
+		Amount types.Int
 	}
 	
 State Changes:
@@ -58,7 +58,7 @@ DrawDebt creates debt in a Vault, minting a new stable asset which is sent to th
 	type MsgDrawRequest struct {
 		From   string
 		ID     uint64
-		Amount github_com_cosmos_cosmos_sdk_types.Int
+		Amount types.Int
 	}
 
 Resulting Changes:
@@ -74,7 +74,7 @@ RepayDebt repays the debt by returning the minted asset to the vault, at which p
 	type MsgRepayRequest struct {
 		From   string
 		ID     uint64
-		Amount github_com_cosmos_cosmos_sdk_types.Int
+		Amount types.Int
 	}
 	
 Resulting Changes:

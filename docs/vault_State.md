@@ -11,7 +11,7 @@ The Vault's collateral is always equal to the total of the deposits.
 		ID        uint64
 		PairID    uint64
 		Owner     string
-		AmountIn  github_com_cosmos_cosmos_sdk_types.Int
-		AmountOut github_com_cosmos_cosmos_sdk_types.Int
+		AmountIn  types.Int
+		AmountOut types.Int
 	}	
 
