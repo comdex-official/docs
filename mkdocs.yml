@@ -47,8 +47,17 @@ extra:
       link: https://twitter.com/ComdexOfficial
     - icon: fontawesome/brands/telegram
       link: https://t.me/ComdexChat
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/EEuCH6jRuc
+      name: Community Group
     - icon: fontawesome/brands/medium
       link: https://comdexofficial.medium.com/
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/Aq2XnaSNAW
+      name: Developer Group
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/EEuCH6jRuc
+      name: Validators Group  
 
 
 #To add icon to side navigation: name is exact navigation item icon is icon path. 
