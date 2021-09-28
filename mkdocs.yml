@@ -98,8 +98,8 @@ nav:
   - Node Setup:
      - Installation: Node_installation.md
      - Config: Node_config.md
-     - TestNet: Node_testnet.md
-     - Join Network: Node_join-network.md
+     - Start local chain: Node_localnet.md
+     - Join Test Network: Node_join_testnet.md
   - Validators:
     - Validator Guide: Validator_Guide.md
     - Validator Setup: Validator_Setup.md

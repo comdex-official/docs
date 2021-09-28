@@ -6,9 +6,9 @@ This is a detailed step-by-step guide for setting up a Comdex validator. Please 
 
 This guide starts with the following assumptions:
 
-- You have [installed](https://comdex-official.github.io/docs/Node_installation/) the Comdex Full Node Software.
-- You have [configured the node](https://comdex-official.github.io/docs/Node_config/) properly.
-- You have [connected the node](https://comdex-official.github.io/docs/Node_join-network/) to an existing network.
+- You have [installed](https://docs.comdex.one/Node_installation/) the Comdex Full Node Software.
+- You have [configured the node](https://docs.comdex.one/Node_config/) properly.
+- You have [connected the node](https://docs.comdex.one/Node_join_testnet/) to an existing network.
 
 ### Register your Validator
 
