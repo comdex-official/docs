@@ -1,6 +1,6 @@
 # Running a Local Testnet
 
-After you've gotten the latest version of Comdex Core installed, you can set up a private comdex network to get your bearings in running a Comdex full node before [joining an existing network](join-network.md).
+After you've gotten the latest version of Comdex Core installed, you can set up a private comdex network to get your bearings in running a Comdex full node before [joining an existing network](Node_join_testnet.md).
 
 ## Single Node Setup
 
