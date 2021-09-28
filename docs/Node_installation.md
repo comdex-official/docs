@@ -49,13 +49,13 @@ client_name: comdex
 version: 
 commit: 
 build_tags: netgo,ledger
-go: go version go1.13.4 darwin/amd64
+go: go version go1.17.1 darwin/amd64
 ```
 
 ## Production Environment
 
 ::: warning NOTE
-This guide only covers general settings for a production-level full node. You can find further details on considerations for operating a validator node in our [Validator Guide](../validator/README.md)
+This guide only covers general settings for a production-level full node. You can find further details on considerations for operating a validator node in our [Validator Guide](Validator_Guide.md)
 
 For the moment, this guide has only been tested against RPM-based Linux distributions. 
 :::
