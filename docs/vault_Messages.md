@@ -38,7 +38,7 @@ Resulting Changes:
 
 ##WithdrawRequest
 
-Withdraw removes collateral from a vault, provided it does not put the Vault under the liquidation ratio.
+Withdraw removes collateral asset from the vault, provided it does not put the Vault under the liquidation ratio.
 
 
 	type MsgWithdrawRequest struct {

@@ -3,6 +3,7 @@
 Below various messages are sent to the asset module which trigger state changes detailed below.
 
 ##AddAsset:
+AddAssetRequest creates new Asset.
 
 	type MsgAddAssetRequest struct {
 		From     string
@@ -10,8 +11,13 @@ Below various messages are sent to the asset module which trigger state changes 
 		Denom    string
 		Decimals int64
 	}
+
+Resulting changes:
+
+- A new Asset is created, sender becomes the Asset owner.
 	
-##UpdateAsset:	
+##UpdateAsset:
+UpdateAsset updates the existing Asset.
 
 	type MsgUpdateAssetRequest struct {
 		From     string
@@ -20,26 +26,14 @@ Below various messages are sent to the asset module which trigger state changes 
 		Denom    string
 		Decimals int64
 	}
-	
-##AddMarket:
-	
-	type MsgAddMarketRequest struct {
-		From     string
-		Symbol   string
-		ScriptID uint64
-		Id       uint64
-	}
-	
-##RemoveMarketForAsset:
 
-	type MsgRemoveMarketForAssetRequest struct {
-		From   string
-		Id     uint64
-		Symbol string
+Resulting changes:
+
+- An existing Asset is updated with the latest price.	
 	
-	}
 
 ##AddPair:
+AddPair creates a new asset pair.
 
 	type MsgAddPairRequest struct {
 		From             string
@@ -47,8 +41,14 @@ Below various messages are sent to the asset module which trigger state changes 
 		AssetOut         uint64
 		LiquidationRatio types.Dec
 	}
+	
+Resulting changes:
+
+- AssetIn will be the user provided asset.
+- CMDX will be AssetOut.
 
 ##UpdatePair:
+UpdatePair updates an existing asset pair.
 
 	type MsgUpdatePairRequest struct {
 		From             string
@@ -56,4 +56,7 @@ Below various messages are sent to the asset module which trigger state changes 
 		LiquidationRatio types.Dec
 	}
 
+Resulting changes:
+
+- If any changes in price the Asset pairs are updated accordingly.
 

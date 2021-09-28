@@ -63,8 +63,6 @@ At any point in time, the total value of collaterals locked in a Vault must be g
 
 During times of extreme price fluctuations and market volatility, there may occur an instance when the cumulative value of the locked-up assets doesn’t sufficiently cover the value of the debt and liquidation fees. This leads to the creation of system debt that can be absorbed by the CMDX token via a debt auction.
 	
-##Auctions
-	
 	
 ##cSwap
 
