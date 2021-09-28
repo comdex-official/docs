@@ -10,7 +10,7 @@ Comdex is based on [Tendermint](https://tendermint.com/docs/introduction/what-is
 
 The Comdex Mainnet is a public Proof-Of-Stake (PoS) blockchain, meaning that validator's weight is determined by the amount of staking tokens (CMDX) bonded as collateral. These tokens can be staked directly by the validator or delegated to them by CMDX holders.
 
-Any user in the system can declare its intention to become a validator by sending a [`create-validator`](https://docs.terra.money/validator/faq.html#how-to-become-a-validator) transaction. From there, they become validators.
+Any user in the system can declare its intention to become a validator by sending a [`create-validator`](https://docs.comdex.one/validator/faq.html#how-to-become-a-validator) transaction. From there, they become validators.
 
 The weight (i.e. total stake) of a validator determines wether or not it is an active validator, and also how frequently this node will have to propose a block and how much revenue it will obtain. Initially, only the top **X??TODO** validators with the most weight will be active validators. If validators double-sign, or are frequently offline, they risk their staked CMDX (including CMDX delegated by users) being "slashed" by the protocol to penalize negligence and misbehavior.
 
@@ -22,7 +22,7 @@ Of course, it is possible and encouraged for users to run full-nodes even if the
 
 ### What is a delegator?
 
-Delegators are CMDX holders who cannot, or do not want to run validator operations themselves. CMDX holders can delegate CMDX to a validator and obtain a part of its revenue in exchange(**HOW??TODO**) (for more detail on how revenue is distributed, see [What is the incentive to stake?](https://comdex-official.github.io/docs/Validator_FAQ/#what-is-the-incentive-to-stake) and [What are validator commission?](https://comdex-official.github.io/docs/Validator_FAQ/#what-are-validators-commission) sections below).
+Delegators are CMDX holders who cannot, or do not want to run validator operations themselves. CMDX holders can delegate CMDX to a validator and obtain a part of its revenue in exchange(**HOW??TODO**) (for more detail on how revenue is distributed, see [What is the incentive to stake?](https://docs.comdex.one/docs/Validator_FAQ/#what-is-the-incentive-to-stake) and [What are validator commission?](https://docs.comdex.one/docs/Validator_FAQ/#what-are-validators-commission) sections below).
 
 Because they share revenue with their validators, delegators also share responsibility. Should a validator misbehave, each of its delegators will be partially slashed in proportion to their stake. This is why delegators should perform due-diligence on validators before delegating, as well as diversifying by spreading their stake over multiple validators.
 

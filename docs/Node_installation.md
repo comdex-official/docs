@@ -15,7 +15,7 @@ We recommend the following for running Comdex Core:
 
 ### Step 1. Install Golang
 
-**Go v1.13.1 or higher is required for Comdex Core.**
+**Go v1.17.1 or higher is required for Comdex Core.**
 
 If you haven't already, install Golang by following the [official docs](https://golang.org/doc/install). Make sure that your `GOPATH` and `GOBIN` environment variables are properly set up.
 
