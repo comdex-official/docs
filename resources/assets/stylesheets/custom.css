@@ -1,6 +1,6 @@
 :root {
     --active-anchar-tag-color: #31a0e0;
-    --h1-color: #48494b;
+    --h1-color: #0c3756;
     --h2-color: #252525;
     --sidebar-bg-color: #FBFBFB;
     --body-bg-color: #ffffff;
@@ -16,7 +16,7 @@
   @media screen {
     [data-md-color-scheme="slate"] {
         --active-anchar-tag-color:#31a0e0;
-        --h1-color:#ebedf1;
+        --h1-color:#ffff;
         --h2-color:#252525;
         --sidebar-bg-color:#2e303e;
         --body-bg-color:hsla(232, 15%, 21%, 1);
@@ -162,7 +162,7 @@ body .md-nav__title {
 }
 
 .md-sidebar.md-sidebar .md-sidebar__inner .md-nav__list .md-nav__item .md-nav__link{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     color: var(--side-bar-link-color);
     font-weight: 500;
@@ -218,7 +218,7 @@ margin: 0;
 }
 .md-content__inner.md-typeset p, .md-content__inner.md-typeset ul li{
     font-weight: normal;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.8;
     color:var(--content-color);
 }
@@ -342,5 +342,3 @@ margin: 0;
 .custom-nav-icon img{
     padding-right: 10px;
 }
-
-
