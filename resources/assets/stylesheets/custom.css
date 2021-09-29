@@ -162,8 +162,8 @@ body .md-nav__title {
 }
 
 .md-sidebar.md-sidebar .md-sidebar__inner .md-nav__list .md-nav__item .md-nav__link{
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 20px;
     color: var(--side-bar-link-color);
     font-weight: 500;
 }
@@ -316,6 +316,7 @@ margin: 0;
     .md-sidebar.md-sidebar .md-sidebar__inner .md-nav__list .md-nav__item .md-nav a{
         padding: 8px 0 8px 10px;
         margin: 0;
+        font-size: 18px;
     }
     .md-sidebar.md-sidebar .md-sidebar__inner .md-nav__list .md-nav__item .md-nav a img{
         display: none;
