@@ -2,30 +2,34 @@
 
 ##Introducing Comdex
 
-Comdex is an ecosystem of solutions built to bridge the gap between DeFi & CeFi by creating synthetic representations of real-world assets.
-
-Investors holding a range of crypto assets can, on Comdex, collateralize and leverage their holdings to take exposure to synthetic assets. Users can lock-up their crypto holding in vaults and mint cAssets (synthetic assets on Comdex) which can be traded on a native exchange with other holders of cAssets.
-
-This mechanism essentially enables holders of crypto assets to take simultaneous “long” positions on their holdings and other Assets.
+Comdex is a decentralized synthetics protocol of the Persistence ecosystem. Users can collateralize their holdings from the Cosmos ecosystem to take exposure to a range of synthetic assets. Comdex builds solutions to democratize finance by giving investors exposure to an extensive range of asset classes.
 
 
-##Challenges addressed by Comdex
+##What are synthetic assets?
 
-Ordinary investors today are easily able to access equity & forex investments due to rapid advancements in the fields of technology and finance. These same asset classes were previously more restricted and more complicated for the ordinary investor to access. Similarly, advances in DeFi are enabling users today to access a wide range of financial services that were previously restricted to qualified investors only. 
-
-Much to the tune of the innovations brought about by DeFi, Comdex aims to lead the movement towards enhancing the access of ordinary investors to a wide range of financial assets. Investors today are faced with the following challenges-
-
-- Lack of global accessibility
-- Lack of 24/7 markets
-- Jurisdictional hurdles for cross-border capital movement
-- Lengthy KYC AML processes.
-
-A permissionless system where users can democratically create, hold, trade, and transact in synthetic assets helps users genuinely overcome the challenges and circumvent any hurdles they face in traditional financial markets.
+A synthetic asset is an on-chain derivative that derives its value based on the price of an underlying asset. Synthetics enable investors to take speculative positions on the movement of assets without taking any direct exposure to the underlying asset itself. On Comdex, users can create, trade, and provide liquidity of a range of synthetic commodity assets.
 
 
-##cAssets on Comdex
+##Why synthetics?
 
-cAssets on Comdex are created by creating Collateralized Debt Positions (Vaults) upon locking up of collateral assets.
+Due to geographical and regulatory limitations, investors today lack the freedom to access a large set of financial assets. Synthetics allow for the tokenization of real-world assets with fewer hurdles than those in the traditional derivatives markets. Synthetics also enable asset originators to gain liquidity on their illiquid debt assets by creating synthetic assets that facilitate a seamless flow of capital between asset classes. 
+
+Comdex enables its users to lever up on their holding to take exposure to various synthetic cAssets. Users can mint cAssets with multiple assets from the Cosmos ecosystem as collateral.
+
+##Why Commodities?
+
+Commodities trade, a $17 trillion industry, is unquestionably the lifeblood of global supply chains. In times of economic uncertainty and high inflation, commodities prices tend to have long term inflation-resistance due to their inherently tangible and pragmatic value. 
+
+Investors today cannot freely access these assets due to several financial and regulatory hurdles. Additionally, SME & MSME borrowers lack the trust and efficiency needed to qualify for financing, causing the $3.4 trillion financing gap. 
+
+By combining the immutability of blockchain and interoperability of IBC, Comdex's synthetics protocol enables investors to take exposure to a broad range of financial assets seamlessly. By creating solutions across the industry, Comdex aims to build bridges for the flow of capital from DeFi and CeFi. Through tokenization of commodity assets and debt, investors can also take exposure to trade finance debt.
+
+
+##What solutions does Comdex build?
+
+Comdex is building a decentralized synthetics protocol on the Cosmos SDK to allow Cosmos ecosystem investors to trade commodity synthetics. Comdex has built an enterprise trading platform for physical commodities trading, built on the Persistence SDK, that enhances trust and efficiency in the commodities trade and trade finance industries.
+Comdex will launch ShipFi, a dApp for digitization and exchange of commodity trade finance debt.
+
 
 ##Vault
 
@@ -54,7 +58,6 @@ The platform will, over time, enhance its abilities to accept a mix of other sta
 ##Oracle
 	
 An oracle is an account that is whitelisted to provide prices for the assets on the chain. The data feed for the price oracles will be sourced from reputable external platforms sources like Band protocol. It may also receive prices from the cSwap or other AMM-based pools.
-
 
 
 ##Liquidations
@@ -132,4 +135,4 @@ Comdex will provide rewards to liquidity farmers in the form of Perpetual Call o
 
 By doing so, we reduce the selling pressure on the CMDX token and establish a natural price floor. It also helps earn additional fee revenue.
 
-##Real-world asset collateralization
+
