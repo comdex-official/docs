@@ -2,16 +2,19 @@
 
 Below various messages are sent to the oracle module which trigger state changes detailed below.
 
-#AddMarket:
+##AddMarket:
+AddMarket creates the raw price for the asset for this market.
 
 	type MsgAddMarketRequest struct {
 		From     string
 		Symbol   string
 		ScriptID uint64
+		Id       uint64
 	}
 
 
-#UpdateMarket:
+##UpdateMarket:
+Update the raw price for the asset for this market.
 	
 	type MsgupdateMarketRequest struct {
 		From     string
@@ -19,8 +22,12 @@ Below various messages are sent to the oracle module which trigger state changes
 		ScriptID uint64
 	}
 
-	
-#FetchPrice:
+Resulting Changes:
+- This replaces any previous price for that oracle.	
+
+
+##FetchPrice:
+FetchPrice fetches the price of an asset from the market.
 
 	type MsgFetchPriceRequest struct {
 		From             string
@@ -34,6 +41,4 @@ Below various messages are sent to the oracle module which trigger state changes
 		PrepareGas       uint64
 		ExecuteGas       uint64
 	}
-	
 
-	

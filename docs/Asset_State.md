@@ -1,7 +1,6 @@
 #State
 
-
-#Asset
+##Asset
 
 	type Asset struct {
 		Id       uint64
@@ -11,7 +10,7 @@
 	}
 
 
-#Pair
+##Pair
 	type Pair struct {
 		Id               uint64
 		AssetIn          uint64

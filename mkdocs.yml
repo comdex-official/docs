@@ -39,7 +39,7 @@ plugins:
         indexing: 'full'
   - minify:
       minify_html: true
-  
+
   # Customization
 extra:
   social:
@@ -47,15 +47,17 @@ extra:
       link: https://twitter.com/ComdexOfficial
     - icon: fontawesome/brands/telegram
       link: https://t.me/ComdexChat
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/BvpPcyYz7y
     - icon: fontawesome/brands/medium
-      link: https://comdexofficial.medium.com/
+      link: https://comdexofficial.medium.com/ 
 
 
 #To add icon to side navigation: name is exact navigation item icon is icon path. 
   nav_links:
     - name: Comdex Overview
       icon: ../assets/images/overview.svg
-    - name: CDP
+    - name: Vault
       icon: ../assets/images/overview.svg
     - name: Asset
       icon: ../assets/images/overview.svg
@@ -63,18 +65,22 @@ extra:
       icon: ../assets/images/overview.svg
     - name: Liquidity
       icon: ../assets/images/overview.svg
-    - name: Incentives
+    - name: Rewards
+      icon: ../assets/images/overview.svg
+    - name: Node Setup
+      icon: ../assets/images/overview.svg
+    - name: Validators
       icon: ../assets/images/overview.svg
 
 # Page tree
 nav:
   - Comdex Overview: index.md
-  - CDP:
-     - Overview : cdp.md
-     - Concepts: cdp_Concepts.md
-     - State: cdp_State.md
-     - Messages: cdp_Messages.md
-     - Events: cdp_Events.md
+  - Vault:
+     - Overview : vault.md
+     - Concepts: vault_Concepts.md
+     - State: vault_State.md
+     - Messages: vault_Messages.md
+     - Events: vault_Events.md
   - Asset:
      - Overview: Asset_Overview.md
      - State: Asset_State.md
@@ -85,10 +91,20 @@ nav:
      - Messages: Oracle_Messages.md
   - Liquidity:
      - Overview: Liquidity_Overview.md   
-  - Incentives:
-     - Overview: Incentive_Overview.md
-     - State: Incentive_State.md
-     - Messages: Incentive_Messages.md
+  - Rewards:
+     - Overview: Rewards_Overview.md
+     - State: Rewards_State.md
+     - Messages: Rewards_Messages.md
+  - Node Setup:
+     - Installation: Node_installation.md
+     - Config: Node_config.md
+     - Start local chain: Node_localnet.md
+     - Join Test Network: Node_join_testnet.md
+  - Validators:
+    - Validator Guide: Validator_Guide.md
+    - Validator Setup: Validator_Setup.md
+    - Validator FAQ: Validator_FAQ.md
+    - Security Practices: Validator_Security_Practices.md
 
 extra_css:
   - assets/stylesheets/custom.css
