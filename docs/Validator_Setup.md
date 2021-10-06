@@ -135,7 +135,7 @@ The default number of files Linux can open (per-process) is `1024`. `comdex` is 
 ```
 # /etc/systemd/system/comdex.service
 [Unit]
-Description=Comdec Node
+Description=Comdex Node
 After=network.target
 
 [Service]
