@@ -72,12 +72,24 @@
         {% endif %}
         <a href="{{ nav_item.url | url }}" class="md-nav__link rad md-nav__link--active">
           <div class="custom-nav-icon">
-          {% for navlink in config.extra.nav_links %}
-          {% if nav_item.title == navlink.name %}
-          <img src="{{ navlink.icon }}" alt="logo">
-          {% endif %}
-        {% endfor %}
-        {{ nav_item.title }}
+        {% if config.theme.palette %}
+                {% for option in config.theme.palette %}
+                  {% if option.scheme == 'default' %}
+                  {% for navlink in config.extra.nav_links %}
+                  {% if nav_item.title == navlink.name %}
+                  <img src="{{ navlink.icon }}" alt="logo_black" class="logo_dark">
+                  {% endif %}
+                {% endfor %}
+                  {% elif option.scheme == 'slate' %}
+                  {% for navlink in config.extra.nav_links %}
+                  {% if nav_item.title == navlink.name %}
+                  <img src="{{ navlink.icon_white }}" alt="logo_white" class="logo_white">
+                  {% endif %}
+                {% endfor %}
+                {% endif %}
+                {% endfor %}
+                {{ nav_item.title }}
+              {% endif %}
       </div>
         </a>
         {% if toc %}
