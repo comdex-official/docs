@@ -45,7 +45,6 @@ AddPair creates a new asset pair.
 Resulting changes:
 
 - AssetIn will be the user provided asset.
-- CMDX will be AssetOut.
 
 ##UpdatePair:
 UpdatePair updates an existing asset pair.

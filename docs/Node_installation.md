@@ -26,7 +26,8 @@ Use `git` to retrieve Comdex Core from the [official repo](https://github.com/co
 ```bash
 git clone https://github.com/comdex-official/comdex
 cd comdex
-git checkout master
+git fetch --tags
+git checkout v0.0.1
 ```
 
 ### Step 3: Build from source
