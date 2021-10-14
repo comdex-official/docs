@@ -338,8 +338,9 @@ margin: 0;
     display: block;
 }
 .custom-nav-icon{
-    display: inline;
+    display: inline-flex;
 }
 .custom-nav-icon img{
     padding-right: 10px;
+    height: 18px;
 }

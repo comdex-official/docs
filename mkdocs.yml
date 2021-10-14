@@ -59,20 +59,28 @@ extra:
   nav_links:
     - name: Comdex Overview
       icon: ../assets/images/overview.svg
+      icon_white: ../assets/images/overview_white.svg
     - name: Vault
-      icon: ../assets/images/overview.svg
+      icon: ../assets/images/vault.svg
+      icon_white: ../assets/images/vault_white.svg
     - name: Asset
-      icon: ../assets/images/overview.svg
+      icon: ../assets/images/asset.svg
+      icon_white: ../assets/images/asset_white.svg
     - name: Oracle
-      icon: ../assets/images/overview.svg
+      icon: ../assets/images/oracle.svg
+      icon_white: ../assets/images/oracle_white.svg
     - name: Liquidity
-      icon: ../assets/images/overview.svg
+      icon: ../assets/images/liquidity.svg
+      icon_white: ../assets/images/liquidity_white.svg
     - name: Rewards
-      icon: ../assets/images/overview.svg
+      icon: ../assets/images/rewards.svg
+      icon_white: ../assets/images/rewards_white.svg
     - name: Node Setup
-      icon: ../assets/images/overview.svg
+      icon: ../assets/images/node.svg
+      icon_white: ../assets/images/node_white.svg
     - name: Validators
-      icon: ../assets/images/overview.svg
+      icon: ../assets/images/validator.svg
+      icon_white: ../assets/images/validator_white.svg
 
 # Page tree
 nav:
