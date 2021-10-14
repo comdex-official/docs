@@ -77,8 +77,10 @@ extra:
       icon_white: ../assets/images/rewards_white.svg
     - name: Node Setup
       icon: ../assets/images/node.svg
+      icon_white: ../assets/images/node_white.svg
     - name: Validators
       icon: ../assets/images/validator.svg
+      icon_white: ../assets/images/validator_white.svg
 
 # Page tree
 nav:
