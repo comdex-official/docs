@@ -338,7 +338,7 @@ margin: 0;
     display: block;
 }
 .custom-nav-icon{
-    display: flex;
+    display: inline-flex;
 }
 .custom-nav-icon img{
     padding-right: 10px;
