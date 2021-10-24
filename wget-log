@@ -1,0 +1,6 @@
+--2021-10-24 14:52:19--  http://www.example.com/samplepage.php
+Resolving www.example.com (www.example.com)... 93.184.216.34, 2606:2800:220:1:248:1893:25c8:1946
+Connecting to www.example.com (www.example.com)|93.184.216.34|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2021-10-24 14:52:21 ERROR 404: Not Found.
+
