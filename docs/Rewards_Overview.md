@@ -1,13 +1,9 @@
 #Overview
 
-x/rewards is an implementation of a Cosmos SDK Module that allows for governance controlled user rewards for users who take certain actions, such as opening a vault. Governance proposes an array of rewards, with each item representing a collateral type that will be eligible for rewards. Each collateral reward specifies the number of coins awarded per second, the length of rewards periods. Governance can alter the collateral rewards using parameter change proposals as well as adding or removing collateral types. All changes to parameters would take place in the next period. User rewards are opt in, ie. users must claim rewards in order to receive them. If users fail to claim rewards before the claim period expiry, they are no longer eligible for rewards.
+In order to enhance the ‘pool lock-in’ period and increase the amount of liquidity available at any point of time for swapping cAssets, we need to reduce the probability of the liquidity provider immediately dumping the native token in the open market in order to claim their rewards without contributing to the stability of the pool. If the user provides liquidity in the form of cXAU to the cXAU-UST pool in the ratio of 50:50, the user receives CMDX rewards. 
+To begin with, Comdex will allocate a total of 5,000,000 tokens for each quarter, specifically for liquidity providers, yielding approximately 55,555.55 tokens available to distribute to liquidity providers per day. With Liquidity Providers assigned as LPi (i being 1 to nth Liquidity provider) and their shares of tokens being assigned LPi tokens; their share in each liquidity pool being denoted P pool name i, we can calculate the number of CMDX tokens being allocated to each LP as follows:
 
 
-LP rewards
 
-Rewards are always paid out in CMDX tokens.
-
-There is a reward pool for each of the trading pairs. These pools get replenished from a master pool which contains tokens allocated for the LP rewards
-APY Calculations and adjusting rewards with movement in CMDX price.
 
 
