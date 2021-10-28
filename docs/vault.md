@@ -11,14 +11,3 @@ The prices of assets are tracked from oracles like Band Protocol or a decentrali
 Collateralization Ratio = (Value of collaterals locked up)/(Value of borrowed assets)
 
 The liquidation ratio can vary depending on the collateral asset type and borrowed asset type. Additionally, the liquidation ratios can be modified and changed through governance proposals for each asset. A debt position can be closed when the borrowed cAsset is returned, and the borrower pays a fee to close the position. Upon closing a position, the cAsset is burned, and the collaterals that were locked up are returned to the borrower.
- 
-##Example
-
-The user locks $200 worth of ATOM to borrow $100 value of cAsset. 
-In this case, the collateral ratio is 200%. Assuming the liquidation ratio to be at 150%, two cases can occur, which will lower the collateralization ratio. 
-
-Case 1:  Prices of the cAsset increase
-Liquidation will occur when the value of cAsset goes up to 133.33 (assuming the value of the collateral (ATOM) stays the same)
-
-Case 2: Price of the Collateral decreases
-Liquidation will occur when the price of Atom declines to 150$ (assuming the value of cAsset stays the same)
