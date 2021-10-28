@@ -1,9 +1,14 @@
 #Overview
 
-In order to enhance the ‘pool lock-in’ period and increase the amount of liquidity available at any point of time for swapping cAssets, we need to reduce the probability of the liquidity provider immediately dumping the native token in the open market in order to claim their rewards without contributing to the stability of the pool. If the user provides liquidity in the form of cXAU to the cXAU-UST pool in the ratio of 50:50, the user receives CMDX rewards. 
-To begin with, Comdex will allocate a total of 5,000,000 tokens for each quarter, specifically for liquidity providers, yielding approximately 55,555.55 tokens available to distribute to liquidity providers per day. With Liquidity Providers assigned as LPi (i being 1 to nth Liquidity provider) and their shares of tokens being assigned LPi tokens; their share in each liquidity pool being denoted P pool name i, we can calculate the number of CMDX tokens being allocated to each LP as follows:
+Liquidity providers on Comdex are eligible to receive the native CMDX tokens as rewards for enhancing the platform’s ability to seamlessly process trades on the cSwap, the Automated Market Maker of the platform. Liquidity provider incentives are crucial for people who believe in the long-term potential of commodities trade and the trade finance solutions being built on Comdex. The protocol follows a rigorous approach towards evaluating its token economics, keeping a full 25% of the total supply of CMDX tokens specifically for Liquidity Providers. Rewards for each liquidity provider will be calculated per day and remain in force as long as the Liquidity provider continues to supply the protocol with liquidity in the form of cAssets. The amount of CMDX rewards are to be calculated as per the following formula:
 
 
+<p align="center">
+  <img src="../assets/images/lp_rewards_formula.png" width="200">
+</p>
 
-
+LPj - Liquidity Reward for Jth LP   
+Ti - Total share of tokens for pool i    
+LPij - Share of tokens reserved in pool i by j LP   
+TPi - Total Amount of liquidity provided into pool i  
 
