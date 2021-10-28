@@ -8,12 +8,11 @@ The Vault module manages and stores the creation of Collateralized Debt Position
 
 The prices of assets are tracked from oracles like Band Protocol or a decentralized pool like Osmosis. A liquidation event is triggered when the collateralization ratio of the position falls below the minimum threshold value (Liquidation Ratio) for a cAsset.
 
-Collateralization Ratio =     Value of collaterals locked up
-             Value of borrowed assets
+Collateralization Ratio = (Value of collaterals locked up)/(Value of borrowed assets)
 
 The liquidation ratio can vary depending on the collateral asset type and borrowed asset type. Additionally, the liquidation ratios can be modified and changed through governance proposals for each asset. A debt position can be closed when the borrowed cAsset is returned, and the borrower pays a fee to close the position. Upon closing a position, the cAsset is burned, and the collaterals that were locked up are returned to the borrower.
  
-Example: 
+##Example
 
 The user locks $200 worth of ATOM to borrow $100 value of cAsset. 
 In this case, the collateral ratio is 200%. Assuming the liquidation ratio to be at 150%, two cases can occur, which will lower the collateralization ratio. 
