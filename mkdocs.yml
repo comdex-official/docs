@@ -107,6 +107,7 @@ nav:
      - Config: Node_config.md
      - Start local chain: Node_localnet.md
      - Join Test Network: Node_join_testnet.md
+     - Join Mainnet: Node_join_mainnet.md
   - Validators:
     - Validator Guide: Validator_Guide.md
     - Validator Setup: Validator_Setup.md
