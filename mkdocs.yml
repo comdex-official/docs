@@ -90,6 +90,7 @@ nav:
      - Concepts: vault_Concepts.md
      - State: vault_State.md
      - Messages: vault_Messages.md
+     - Events: vault_Events.md
   - Asset:
      - Overview: Asset_Overview.md
      - State: Asset_State.md
@@ -102,11 +103,14 @@ nav:
      - Overview: Liquidity_Overview.md   
   - Rewards:
      - Overview: Rewards_Overview.md
+     - State: Rewards_State.md
+     - Messages: Rewards_Messages.md
   - Node Setup:
      - Installation: Node_installation.md
      - Config: Node_config.md
      - Start local chain: Node_localnet.md
      - Join Test Network: Node_join_testnet.md
+     - Join Mainnet: Node_join_mainnet.md
   - Validators:
     - Validator Guide: Validator_Guide.md
     - Validator Setup: Validator_Setup.md
