@@ -101,6 +101,12 @@ nav:
      - Messages: Oracle_Messages.md
   - Liquidity:
      - Overview: Liquidity_Overview.md   
+     - State: Liquidity_State.md
+     - Messages: Liquidity_Messages.md
+  - Liquidation:
+      - Overview: Liquidation_Overview.md
+      - State: Liquidation_States.md
+      - Messages: Liquidation_Messages.md
   - Rewards:
      - Overview: Rewards_Overview.md
      - State: Rewards_State.md
