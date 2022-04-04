@@ -53,6 +53,9 @@ extra:
       link: https://discord.com/invite/7vjPvWKKMT
     - icon: fontawesome/brands/medium
       link: https://comdexofficial.medium.com/ 
+    - icon: fontawesome/brands/discourse
+      link: https://forum.comdex.one/
+
 
 
 #To add icon to side navigation: name is exact navigation item icon is icon path. 
