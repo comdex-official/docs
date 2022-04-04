@@ -75,6 +75,9 @@ extra:
     - name: Liquidity
       icon: ../assets/images/liquidity.svg
       icon_white: ../assets/images/liquidity_white.svg
+    - name: Liquidation
+      icon: ../assets/images/liquidation.svg
+      icon_white: ../assets/images/liquidation_white.svg
     - name: Rewards
       icon: ../assets/images/rewards.svg
       icon_white: ../assets/images/rewards_white.svg
