@@ -69,15 +69,21 @@ extra:
     - name: Asset
       icon: ../assets/images/asset.svg
       icon_white: ../assets/images/asset_white.svg
-    - name: Oracle
-      icon: ../assets/images/oracle.svg
-      icon_white: ../assets/images/oracle_white.svg
+    - name: Market
+      icon: ../assets/images/market.svg
+      icon_white: ../assets/images/market_white.svg
+    - name: Bandoracle
+      icon: ../assets/images/band_oracle.svg
+      icon_white: ../assets/images/band_oracle_white.svg
     - name: Liquidity
       icon: ../assets/images/liquidity.svg
       icon_white: ../assets/images/liquidity_white.svg
     - name: Liquidation
       icon: ../assets/images/liquidation.svg
       icon_white: ../assets/images/liquidation_white.svg
+    - name: Auction
+      icon: ../assets/images/auction.svg
+      icon_white: ../assets/images/auction_white.svg
     - name: Rewards
       icon: ../assets/images/rewards.svg
       icon_white: ../assets/images/rewards_white.svg
@@ -105,6 +111,10 @@ nav:
      - Overview: Market_Overview.md
      - State: Market_State.md
      - Messages: Market_Messages.md
+  - Bandoracle:
+     - Overview: Bandoracle_Overview.md
+     - State: Bandoracle_State.md
+     - Governance: Bandoracle_Governance.md
   - Liquidity:
      - Overview: Liquidity_Overview.md   
      - State: Liquidity_State.md
@@ -112,7 +122,10 @@ nav:
   - Liquidation:
       - Overview: Liquidation_Overview.md
       - State: Liquidation_States.md
-      - Messages: Liquidation_Messages.md
+  - Auction:
+     - Overview: Auction_Overview.md
+     - State: Auction_State.md
+     - Messages: Auction_Messages.md
   - Rewards:
      - Overview: Rewards_Overview.md
      - State: Rewards_State.md
