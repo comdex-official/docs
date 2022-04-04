@@ -97,11 +97,11 @@ nav:
   - Asset:
      - Overview: Asset_Overview.md
      - State: Asset_State.md
-     - Messages: Asset_Messages.md
-  - Oracle:
-     - Overview: Oracle_Overview.md
-     - State: Oracle_State.md
-     - Messages: Oracle_Messages.md
+     - Governance: Asset_Governance.md
+  - Market:
+     - Overview: Market_Overview.md
+     - State: Market_State.md
+     - Messages: Market_Messages.md
   - Liquidity:
      - Overview: Liquidity_Overview.md   
      - State: Liquidity_State.md
