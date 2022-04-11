@@ -1,3 +1,11 @@
-#State
+# State
 
-Below various messages are sent to the liquidity module which trigger state changes detailed below.
+## PoolType
+
+    type PoolType struct {
+	    Id                uint32 
+	    Name              string 
+	    MinReserveCoinNum uint32 
+	    MaxReserveCoinNum uint32 
+	    Description       string 
+    }
