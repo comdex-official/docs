@@ -1,6 +1,8 @@
 #State
 
 ## LockedVault
+The LockedVault struct replicates a vault that liquidates when it cannot maintain the Collateralization Ratio. It contains all the necessary info passed to the Auction module. The collateral auctioned is calculated, and the value passes to the Auction module, where bids begin.
+
 
     type LockedVault struct {
 	    LockedVaultId                uint64                                  

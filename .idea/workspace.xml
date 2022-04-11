@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6d254f6-cb22-4842-84f5-1edb6202e938" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Asset_State.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Asset_State.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Auction_Messages.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Auction_Messages.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Auction_State.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Auction_State.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Bandoracle_State.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Bandoracle_State.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Liquidation_States.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Liquidation_States.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Market_State.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Market_State.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Rewards_State.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Rewards_State.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +31,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="GoLibraries">
-    <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="rk1wb7mg" />
@@ -47,7 +52,7 @@
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

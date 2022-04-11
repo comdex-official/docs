@@ -1,8 +1,7 @@
 # State
 
-Below is the message sent to fetch price from the Bandchain Oracle.
-
 ## MsgFetchPriceData
+The MsgFetchPriceData struct saves all the necessary data required to get data from the Bandchain Oracle. FetchPriceData Packets are created and then relayed through the relayers to get the price back from the Bandchain Oracle.
 	
     type MsgFetchPriceData struct {
 	    Creator        string                                   

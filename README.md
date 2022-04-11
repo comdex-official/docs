@@ -23,14 +23,20 @@ Documentation for Comdex at: [comdex docs](https://docs.comdex.one)
 
 [3. ASSET](https://docs.comdex.one/Asset_Overview/)
 
-[4. ORACLE](https://docs.comdex.one/Oracle_Overview/)
+[4. MARKET](https://docs.comdex.one/Market_Overview/)
 
-[5. LIQUIDITY](https://docs.comdex.one/Liquidity_Overview/)
+[5. BANDORACLE](https://docs.comdex.one/Bandoracle_Overview/)
 
-[6. REWARDS](https://docs.comdex.one/Rewards_Overview/)
+[6. LIQUIDITY](https://docs.comdex.one/Liquidity_Overview/)
 
-[7. NODE SETUP](https://docs.comdex.one/Node_installation/)
+[7. LIQUIDATION](https://docs.comdex.one/Liquidation_Overview/)
 
-[8. VALIDATORS](https://docs.comdex.one/Validator_Guide/)
+[8. AUCTION](https://docs.comdex.one/Auction_Overview/)
+
+[9. REWARDS](https://docs.comdex.one/Rewards_Overview/)
+
+[10. NODE SETUP](https://docs.comdex.one/Node_installation/)
+
+[11. VALIDATORS](https://docs.comdex.one/Validator_Guide/)
 
 

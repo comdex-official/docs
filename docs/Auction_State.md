@@ -1,6 +1,7 @@
 # State
 
 ## CollateralAuction
+The CollateralAuction struct creates a record for all the bids and tracks them. It follows if the offer is active or not and keeps track of the bidder. A bid is active for 6 hours from the time initialized, and the user with the highest bid gets the collateral.
 
     type CollateralAuction struct {
 	    Id                  uint64                                        
