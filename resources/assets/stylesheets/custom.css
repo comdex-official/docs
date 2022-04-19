@@ -297,6 +297,9 @@ margin: 0;
         background-color: var(--sidebar-bg-color);
         width: 14.1rem;
     }
+    .md-sidebar{
+        height: auto !important;
+    }
     .md-sidebar.md-sidebar--primary .md-sidebar__scrollwrap{
         background-color: var(--sidebar-bg-color);
         margin: 0;
