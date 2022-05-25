@@ -11,7 +11,7 @@ cAssets are synthetics that reflect commodity derivative contracts whose prices 
 A cAsset will get listed on the Comdex Synthetics Protocol once the following steps have been achieved:
     • Create the cAsset token and define all parameters 
     • Assign the oracle feeder
-    • Create the cAsset-UST trading pair on cSwap and its LP token
+    • Create the cAsset-CMST trading pair on cSwap and its LP token
 Listing is approved by a new governance proposal and immediately implemented once 51% of the total governance votes have been garnered. Once a cAsset has been listed, it can be used for minting against Cosmos ecosystem assets as collaterals and available on cSwap. Liquidity providers earn CMDX tokens which can be used to create more cAssets. 
 
 ##Removal of cAsset

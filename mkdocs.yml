@@ -1,7 +1,7 @@
 site_name: Comdex
 site_description : An ecosystem of solutions built with an aim of bridging DeFi & CeFi
 repo_name: Comdex Core
-repo_url: https://github.com/comdex-official/comdex
+repo_url: https://github.com/comdex-official/docs
 
 # Documentation and theme
 theme:
