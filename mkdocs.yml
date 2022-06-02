@@ -105,8 +105,25 @@ nav:
      - Events: vault_Events.md
   - Asset:
      - Overview: Asset_Overview.md
+     - Messages: Asset_Messages.md
      - State: Asset_State.md
      - Governance: Asset_Governance.md
+  - Collector:
+      - Overview: Collector_Overview.md
+      - Messages: Collector_Messages.md
+      - State: Collector_State.md
+  - Locker:
+      - Overview: Locker_Overview.md
+      - Messages: Locker_Messages.md
+      - State: Locker_State.md
+  - Locking:
+      - Overview: Locking_Overview.md
+      - Messages: Locking_Messages.md
+      - State: Locking_State.md
+  - TokenMint:
+      - Overview: TokenMint_Overview.md
+      - Messages: TokenMint_Messages.md
+      - State: TokenMint_State.md
   - Market:
      - Overview: Market_Overview.md
      - State: Market_State.md
