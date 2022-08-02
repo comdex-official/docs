@@ -27,7 +27,7 @@ Use `git` to retrieve Comdex Core from the [official repo](https://github.com/co
 git clone https://github.com/comdex-official/comdex
 cd comdex
 git fetch --tags
-git checkout v0.0.1
+git checkout v2.1.0
 ```
 
 ### Step 3: Build from source
@@ -50,7 +50,7 @@ client_name: comdex
 version: 
 commit: 
 build_tags: netgo,ledger
-go: go version go1.17.1 darwin/amd64
+go: go version go1.18.5 darwin/amd64
 ```
 
 ## Production Environment
