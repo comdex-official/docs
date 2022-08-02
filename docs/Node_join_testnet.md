@@ -1,11 +1,11 @@
-# comets-test
-> This is comdex testnet chain
+# meteor-test
+> This is the updated Meteor Testnet on Comdex
 
 > GENESIS PUBLISHED
 
 > PEERS PUBLISHED
 
-1st testnet for comdex-official/comdex application.
+2nd testnet for comdex-official/comdex application.
 
 ## Hardware Requirements
 * **Minimal**
@@ -23,7 +23,7 @@
     * Linux(x86_64)
 
 ## Installation Steps
->Prerequisite: go1.17+ required. [ref](https://golang.org/doc/install)
+>Prerequisite: go1.18+ required. [ref](https://golang.org/doc/install)
 
    Append the below lines to the file ${HOME}/.bashrc and execute the command source ${HOME}/.bashrc to reflect in the current Terminal session
    ```shell
@@ -45,7 +45,7 @@ git clone https://github.com/comdex-official/comdex.git
 ```shell
 cd comdex
 git fetch --tags
-git checkout v0.0.2
+git checkout v2.1.0
 ```
 * Install
 ```shell
@@ -63,42 +63,33 @@ or
 
 ## Validator setup instructions
 
-### GenTx : No Accepting Now.
+### Running a full node
 
 * [Install](#installation-steps) comdex core application
 * Initialize node
 ```shell
-comdex init {{NODE_NAME}} --chain-id comets-test
-comdex add-genesis-account {{KEY_NAME}} 1000000000ucmdx
-comdex gentx {{KEY_NAME}} 10000000ucmdx \
---chain-id comets-test \
---moniker="{{VALIDATOR_NAME}}" \
---commission-max-change-rate=0.01 \
---commission-max-rate=1.0 \
---commission-rate=0.07 \
---details="XXXXXXXX" \
---security-contact="XXXXXXXX" \
---website="XXXXXXXX"
+comdex init {{NODE_NAME}} --chain-id meteor-test
 ```
-* Copy the contents of `${HOME}/.comdex/config/gentx/gentx-XXXXXXXX.json`.
-* Fork the [repository](https://github.com/comdex-official/networks/)
-* Create a file `gentx-{{VALIDATOR_NAME}}.json` under the testnet/comets-test/gentxs folder in the forked repo, paste the copied text into the file. Find reference file gentx-examplexxxxxxxx.json in the same folder.
-* Run `comdex tendermint show-node-id` and copy your nodeID.
-* Run `ifconfig` or `curl ipinfo.io/ip` and copy your publicly reachable IP address.
-* Create a file `peers-{{VALIDATOR_NAME}}.json` under the testnet/comets-test/peers folder in the forked repo, paste the copied text from the last two steps into the file. Find reference file sample-peers.json in the same folder.
-* Create a Pull Request to the `main` branch of the [repository](https://github.com/comdex-official/networks)
->**NOTE:** The Pull Request will be merged by the maintainers to confirm the inclusion of the validator at the genesis. The final genesis file will be published under the file testnet/comets-test/genesis_final.json.
-* Replace the contents of your `${HOME}/.comdex/config/genesis.json` with that of testnet/comets-test/genesis_final.json.
-* Copy below node as `persistent_peers` or `seeds` in `${HOME}/.comdex/config/config.toml`
- 
+* Download the latest genesis and replace it
 ```shell
-3659590cd1466671a49421089e55f1392e1cad0e@15.207.189.210:26656,8b1ccf5cf3a3ba65ee074f46ea8c6c164d867104@52.201.166.91:26656,5307ce50bd8a6f7bb5a922e3f7109b5f3241c425@13.51.118.56:26656,9c25a7ab94a315f683c3693e17aec6b2c91c851c@52.77.115.73:26656
+cd ${HOME}/.comdex/config
+rm genesis.json
+wget https://raw.githubusercontent.com/comdex-official/networks/main/testnet/meteor-test/genesis.json
 ```
-* Copy below value as minimum-gas-prices in ${HOME}/.comdex/config/app.toml
+* Verify the genesis hash (the following command should match ```b0744029560d65bd5d81dbe055704708a33c3d51594b02ea575cf4b56d7f506e```
 ```shell
-0.2ucmdx
+sha256 genesis.json
 ```
-
+* Update the existing peers in ```${HOME}/.comdex/config/config.toml```
+```
+persistent_peers = "4202b41ccc3032011969005a215e1dbe36e3ba23@3.109.138.42:26656,223d534f0fd1daeea3578346ad3e49d9cec973b6@54.204.207.38:26656,efa67d2456e8e22e9b29bd127ed3024cffc7ede1@46.166.163.37:26656,494af55997cbb1df62cff1ed4f35b58c31277f63@46.166.172.230:26656"
+```
+* Restore the snapshot provided by the Comdex Team
+```
+cd ${HOME}/.comdex/
+wget https://binaries-comdex.s3.ap-south-1.amazonaws.com/data.tar.lz4
+lz4 -d data.tar.lz4 | tar xf -
+```
 * Start comdex by running below command or create a `systemd` service to run comdex in background.
 ```shell
 comdex start
@@ -107,21 +98,7 @@ comdex start
 
 ### Become a validator
 
-* [Install](#installation-steps) comdex core application
-* Initialize node
-```shell
-comdex init {{NODE_NAME}}
-```
-* Replace the contents of your `${HOME}/.comdex/config/genesis.json` with that of testnet/comets-test/genesis_final.json from the `main` branch of [repository](https://github.com/comdex-official/networks).
-* Copy below node as `persistent_peers` or `seeds` in `${HOME}/.comdex/config/config.toml`
-```shell
-3659590cd1466671a49421089e55f1392e1cad0e@15.207.189.210:26656,8b1ccf5cf3a3ba65ee074f46ea8c6c164d867104@52.201.166.91:26656,5307ce50bd8a6f7bb5a922e3f7109b5f3241c425@13.51.118.56:26656,9c25a7ab94a315f683c3693e17aec6b2c91c851c@52.77.115.73:26656
-```
-
-* Copy below value as minimum-gas-prices in ${HOME}/.comdex/config/app.toml
-```shell
-0.2ucmdx
-```
+* Follow the above steps to run a full node
 
 * Start comdex by running below command or create a `systemd` service to run comdex in background.
 ```shell
@@ -132,31 +109,26 @@ comdex start
 * Send a create-validator transaction
 ```
 comdex tx staking create-validator \
---from {{KEY_NAME}} \
---amount XXXXXXXXucmdx \
---pubkey $(comdex tendermint show-validator) \
---chain-id comets-test \
---moniker="{{VALIDATOR_NAME}}" \
---commission-max-change-rate=0.01 \
---commission-max-rate=1.0 \
---commission-rate=0.07 \
---min-self-delegation="1" \
---details="XXXXXXXX" \
---security-contact="XXXXXXXX" \
---website="XXXXXXXX"
+  --amount={{STAKING_AMOUNT}} \
+  --pubkey=$(comdex tendermint show-validator) \
+  --moniker="anurag.validator.test" \
+  --chain-id=meteor-test \
+  --commission-rate="0.10" \
+  --commission-max-rate="0.20" \
+  --commission-max-change-rate="0.01" \
+  --min-self-delegation="9000000" \
+  --gas="auto" \
+  --fees 40000ucmdx \
+  --from={{KEY_NAME}}
 ```
 
 ## Version
-This chain is currently running on Comdex [v0.0.2](https://github.com/comdex-official/comdex/releases/tag/v0.0.2)
-Commit Hash: 36e59abc8aff22a8eea2e851ee19e497c7f754ea
+This chain is currently running on Comdex [v2.1.0](https://github.com/comdex-official/comdex/releases/tag/v2.1.0)
+Commit Hash: a2d03e037491dc2779eafebfac1eb4dd14eaa24c
 >Note: If your node is running on an older version of the application, please update it to this version at the earliest to avoid being exposed to security vulnerabilities /defects.
 
 ## Binary
-The binary can be downloaded from [here](https://github.com/comdex-official/comdex/releases/tag/v0.0.2).
+The binary can be downloaded from [here](https://github.com/comdex-official/comdex/releases/tag/v2.1.0).
 
 ## Explorer
-The explorer for this chain is hosted [TestNet Explorer](https://comets-test.comdex.one/)
-
-## Genesis Time
-The genesis transactions sent before 1200HRS UTC 15th October 2021 will be used to publish the genesis_final.json at 1400HRS UTC 15th October 2021 and then start the chain at 14.30UTC once the quorum is reached.
-
+The explorer for this chain is hosted [TestNet Explorer](https://meteor-test.comdex.one/)
