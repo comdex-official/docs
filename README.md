@@ -1,3 +1,5 @@
+This repo has been archived and moved to new repo https://github.com/comdex-official/comdex-docs
+
 # Comdex Official Documentaion
 
 To run mkdocs server locally:
